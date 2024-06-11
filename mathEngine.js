@@ -18,4 +18,10 @@ function mathEngine(arr) {
   }
 
 
-  console.log(mathEngine([]))
+//   console.log(mathEngine([]))
+
+//   or
+
+const mathEngine2 = (array) => array === null ? 0: array.filter(a => a < 0 ).reduce((a,b)=> a+b, 0) + array.filter(a=> a > -1).reduce((a,b) => a*b, 1);
+console.log(mathEngine2([1,null])) 
+console.log(null > -1);

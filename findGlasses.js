@@ -11,3 +11,11 @@ function findGlasses(arr){
 
     return undefined
 }
+
+// another way
+/*
+function findGlasses(a){
+return a.findIndex(e => /O-+O/.test(e))
+}
+
+*/

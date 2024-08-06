@@ -8,3 +8,17 @@ function toCamelCase(str){
     }
     return words.join('')
 }
+
+// or
+
+function toCamelCase1(str){
+    let strArr = str.split('')
+
+    for(let i = 0; i < strArr.length; i++ ){
+        if(strArr[i] == '_' || strArr[i] == '-'){
+            strArr[i+1] = arr[i+1][0].toUpperCase() + strArr[i+1].slice(1)
+            strArr[i] = ''
+        }
+    }
+    return strArr.join('')
+}

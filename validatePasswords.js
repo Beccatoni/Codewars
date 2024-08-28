@@ -13,6 +13,6 @@ var logIn = function (password) {
             return true
         }
         return false
-        
     }
 }
+

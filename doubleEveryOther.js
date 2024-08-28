@@ -9,3 +9,11 @@ function doubleEveryOther(a){
     }
     return a
 }
+
+
+
+// or
+
+function double(a){
+    return a.map((e,i)=> i%2==0? e: e*2)
+}
